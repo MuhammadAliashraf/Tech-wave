@@ -1,0 +1,9 @@
+.container {
+  background-image: url('https://plus.unsplash.com/premium_photo-1661281397737-9b5d75b52beb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9jdG9yfGVufDB8fDB8fHww&w=1000&q=80');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+}
+
+/* Rest of the styles remain the same */
