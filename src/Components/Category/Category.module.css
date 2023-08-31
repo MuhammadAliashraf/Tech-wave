@@ -1,0 +1,86 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.categoryItem {
+  background-color: #f8f8f8;
+  width: 45%;
+  border-radius: 50px;
+  height: 400px;
+  position: relative; /* Add this */
+  margin: 10px; /* Add some margin for spacing */
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px; /* Adjust the dimensions as needed */
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  position: absolute;
+  bottom: 30%;
+  left: 20px;
+  padding: 10px;
+  width: calc(100% - 20px); /* Adjust padding accordingly */
+}
+.title {
+  font-size: 24px;
+  font-weight: 400;
+}
+.details {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 27px;
+  width: 50%;
+}
+.explore {
+  position: absolute;
+  bottom: 10%;
+  left: 20px;
+  padding: 10px;
+  width: calc(100% - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 40%;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  transition: transform 0.3s; /* Apply transition to transform property */
+}
+
+.explore:hover {
+  transform: translateY(5px); /* Move the text and icon downward on hover */
+}
+
+.explore p,
+.explore svg {
+  transition: transform 0.3s; /* Apply transition to transform property */
+}
+
+.explore:hover p,
+.explore:hover svg {
+  transform: translateY(5px); /* Move text and icon downward on hover */
+}
+
+.explore p {
+  margin-bottom: -2px;
+}
+
+/* Add media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .categoryItem {
+    width: 100%; /* Full width on mobile */
+  }
+}
