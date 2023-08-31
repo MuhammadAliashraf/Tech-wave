@@ -13,12 +13,17 @@ function NavBar() {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <img src={Logo} />
+          <div style={{display:"flex",alignItems:"center"}} >
+          <a href="/">
+    <img src={Logo} alt="Tech Wave Logo" />
+  </a>
+          <h4>Tech Wave</h4>
+          </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-item">
               <NavLink
                 exact
-                to="/"
+                to="/store"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}

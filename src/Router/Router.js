@@ -1,8 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from '../Pages/Home'
+import Home from '../Pages/Home/Home'
 import NavbarCom from '../Components/Navbar/Navbar'
-import TopNav from '../Components/Navtop/TopNav'
 
 const AppRouter = () => {
   return (

@@ -6,12 +6,25 @@ function MyButton(props) {
     border,
     label,
     Onclick,
+    black,
+    white,
+    lightgray,
+    width,
+    height,
+    backgroundcolor,
+    color,
+    borderRadius,
+    marginLeft,
+    marginright
   } = props
   return (
     <div>
       <button
         onClick={Onclick}
-        className={styles.btn}>
+        className={[
+          white?styles.whitebtn:
+          styles.btn]}
+          >
         {label}
       </button>
     </div>

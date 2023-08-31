@@ -1,0 +1,22 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+}
+.twobtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 400;
+}
+.p{
+    text-align: center;
+    color: #cfcfcf;
+}
