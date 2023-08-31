@@ -76,6 +76,7 @@
   /* border: 1px solid #03a9f4; */
   background-color: #f8f8f8;
   border-radius: 10px;
+      font-weight: 500;
 }
 
 .nav-icon {
@@ -99,6 +100,9 @@
   padding-left: 20px;
 }
 @media screen and (max-width: 960px) {
+    .input-feild-div{
+    display: none;
+  }
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -112,15 +116,16 @@
   }
 
   .nav-menu.active {
-    background: #03a9f4;
+    background: #f8f8f8;
     left: 0px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
   }
   .nav-item .active {
-    color: white;
+    color: #2B2B30;
     border: none;
+    font-weight: 500;
   }
   .nav-links {
     padding: 1.5rem;
@@ -136,6 +141,6 @@
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #03a9f4;
+    color:#2B2B30;
   }
 }
