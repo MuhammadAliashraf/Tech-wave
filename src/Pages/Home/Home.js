@@ -7,6 +7,7 @@ import Gear from "../../images/image (11).png"
 import Gear1 from "../../images/image (7).png"
 import Watch from "../../images/image.png"
 import { useState } from 'react'
+import Experience from '../../Components/Experience/Experience'
 function Home() {
   const[data,setdata]=useState([
     {
@@ -38,6 +39,7 @@ function Home() {
     <div>
       <HeroSection/>
       <Category Data={data}/>
+      <Experience/>
     </div>
   )
 }

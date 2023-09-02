@@ -7,7 +7,7 @@ function HeroSection() {
   return (
     <div className={styles.main}>
       <Fade bottom>
-        <h1 className={styles.h1}>
+        <h1 className={styles.h1}>  
           High-quality tech gadgets
           <br />& accessories
         </h1>
