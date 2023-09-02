@@ -1,0 +1,114 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.seller {
+  margin: 2rem;
+}
+
+.main {
+  /* width: 100%; */
+}
+
+.para {
+  position: absolute;
+  z-index: 2;
+  top: 1rem;
+  border-radius: 2rem;
+  left: 2rem;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cardItem {
+  margin: 1%;
+  transition: transform 0.3s;
+}
+
+.cardItem:hover {
+  transform: scale(1.05); 
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.explore {
+  bottom: 10%;
+  left: 20px;
+  padding: 10px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.explore:hover {
+  transform: translateY(5px); /* Move the text and icon downward on hover */
+}
+.explore p,
+.explore svg {
+  transition: transform 0.3s;
+}
+
+.explore:hover p,
+.explore:hover svg {
+  transform: translateY(5px); /* Move text and icon downward on hover */
+}
+
+.explore p {
+  margin-bottom: -2px;
+}
+.content{
+  padding: 2rem;
+}
+/* Media Query for smaller screens */
+@media (max-width: 767px) {
+  .cardItem {
+    width: 100%; /* Full width for single cards on smaller screens */
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    margin-top: 2rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .explore{
+    width: 100%;
+  }
+  .card {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+  }
+  .para {
+    position: absolute;
+    z-index: 2;
+    top: .2rem;
+    border-radius: 2rem;
+    left: .2rem;
+    background-color: white;
+    padding: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+      rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+      rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+      font-size: 10px;
+  }
+}
