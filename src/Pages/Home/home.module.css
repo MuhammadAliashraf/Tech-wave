@@ -7,3 +7,23 @@
 }
 
 /* Rest of the styles remain the same */
+.images{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+.homeimages{
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width:767px) {
+  .homeimages{
+  width: 100%;
+  height: 300%;
+}.images{
+  margin: 2rem;
+}
+
+}

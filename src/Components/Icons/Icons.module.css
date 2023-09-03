@@ -1,0 +1,33 @@
+.icontop{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 2rem;
+  padding: 2rem;
+  flex-direction: row;
+}
+.iconmain{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+.icon_content{
+  margin-left: 1rem;
+}
+
+@media screen and (max-width:767px) {
+  .icontop{
+    margin: 2rem;
+    padding: .5rem;
+  }
+  .iconmain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+}

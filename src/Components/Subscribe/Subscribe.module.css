@@ -1,0 +1,63 @@
+.maincolor {
+  background-color: #f8f8f8;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  padding: 2rem;
+  flex-direction: column;
+}
+.Subscribe_content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.Subscribe_content h4 {
+  text-align: center;
+  width: 40%;
+  font-size: 25px;
+}
+.Subscribe_inputs {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  /* flex-wrap: wrap; */
+}
+.Subscribe_inputs input {
+  width: 80%;
+  border-radius: 20px;
+  height: 8vh;
+  padding-left: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .Subscribe_inputs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .Subscribe_inputs input {
+    width: 80%;
+    border-radius: 20px;
+    height: 8vh;
+    padding-left: 1rem;
+  }
+  .Subscribe_content h4 {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+  }
+  .Subscribe_content p {
+    text-align: center;
+    width: 100%;
+  }
+  .Subscribe_inputs .btn{
+    margin-top: 1rem;
+  }
+}
