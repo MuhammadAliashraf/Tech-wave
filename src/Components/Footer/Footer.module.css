@@ -1,0 +1,37 @@
+.footermain{
+    border-top-left-radius: 105px;
+border-top-right-radius: 105px;
+    background-color: black;
+    height: 100vh;
+}
+.headicons{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+.allcontent{
+    border: 1px solid wheat;
+}
+.menu{
+    width: 40%;
+    border: 1px solid wheat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu2{
+}
+.menuitems{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;   
+}
+.footer_second{
+    border: 1px solid wheat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

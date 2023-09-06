@@ -136,6 +136,7 @@ function Home() {
       image:"../../images/icons (3).png"
     },]
   )
+  
   return (
     <div>
       <HeroSection />
@@ -150,7 +151,7 @@ function Home() {
       <Premium />
       <Bestsellers title="Featured Products" label="Browse all products" showbigimage show sellers={features} />
       <Icons data={icons}/>
-        <Subscribe/>
+      <Subscribe/>
       </div>  
   )
 }
