@@ -2,6 +2,10 @@ import React from 'react'
 import styles from './Footer.module.css'
 import Fade from 'react-reveal'
 import { FaTwitter, FaInstagram, FaFacebook, FaLinkedin } from 'react-icons/fa'
+import Image from "../../images/Clip path group.png"
+import Image1 from "../../images/Clip path group-2.png"
+import Image2 from "../../images/Clip path group-1.png"
+
 function Footer() {
   return (
     <Fade bottom>
@@ -11,11 +15,11 @@ function Footer() {
             <div>
               <h3>Tech Wave</h3>
             </div>
-            <div>
-              <FaTwitter color="white" />
-              <FaInstagram color="white" />
-              <FaFacebook color="white" />
-              <FaLinkedin color="white" />
+            <div  className={styles.socialicons} >
+              <FaTwitter size={30} color="white" />
+              <FaInstagram size={30} color="white" />
+              <FaFacebook size={30} color="white" />
+              <FaLinkedin size={30} color="white" />
             </div>
           </div>
           <p>
@@ -27,32 +31,43 @@ function Footer() {
             <div>
             <h5>Menu</h5>
             <div className={styles.menuitems}>
-              <a href="/about">Home</a>
-              <a href="/about">Store</a>
-              <a href="/about">About</a>
-              <a href="/about">Articles</a>
+              <a href="/">Home</a>
+              <a href="/">Store</a>
+              <a href="/">About</a>
+              <a href="/">Articles</a>
             </div>
             </div>
             <div className={styles.menu2}>
-              <h5>Menu</h5>
+              <h5>UTILITY PAGES</h5>
               <div className={styles.menuitems}>
-                <a href="/about">Home</a>
-                <a href="/about">Store</a>
-                <a href="/about">About</a>
-                <a href="/about">Articles</a>
+                <a href="/">Shipping</a>
+                <a href="/">Contact</a>
+                <a href="/">404 Not Found</a>
+                <a href="/">Support</a>
               </div>
             </div>
           </div>
             <div className={styles.contact}>
-              <h5>contact</h5>
+              <h5>CONTACT US</h5>
               <div className={styles.menuitems}>
-                <a href="/about">Home</a>
-                <a href="/about">Store</a>
-                <a href="/about">About</a>
-                <a href="/about">Articles</a>
+                <a href="/">Email</a>
+                <a href="/">Phone</a>
               </div>
             </div>
         </div>
+
+          {/* copyRight section  */}
+
+          <div className={styles.lineandpayment}  >
+            <div className={styles.line} ></div>
+            <h5>Copyright © <span style={{color:"white"}} >Dev Muhammad Ali</span> | Designed by <span style={{color:"white"}} > Muhammad Ali</span></h5>
+            <div className={styles.path} >
+              <img  src={Image} />
+              <img  src={Image1} />
+              <img  src={Image2} />
+            </div>
+          </div>
+
         </div>
       </div>
     </Fade>
