@@ -9,14 +9,20 @@ function Bestsellers({ sellers, title, label, show, showbigimage }) {
     <div className={styles.seller}>
       <div className={styles.header}>
         <h1>{title}</h1>
-        <div className={styles.explore}>
-          <div>
-            <p>{label}</p>
-          </div>
-          <div>
-            <FaArrowRight />
-          </div>
-        </div>
+        {title ? (
+          <>
+            <div className={styles.explore}>
+              <div>
+                <p>{label}</p>
+              </div>
+              <div>
+                <FaArrowRight />
+              </div>
+            </div>
+          </>
+        ) : (
+          ''
+        )}
       </div>
       {showbigimage ? (
         <div className={styles.big}>
