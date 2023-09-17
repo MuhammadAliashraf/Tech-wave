@@ -1,0 +1,60 @@
+.maincolor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  padding: 2rem;
+  height: 50vh;
+}
+.header {
+  text-align: center;
+}
+.header p {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+  color: #c4c4c4;
+}
+.cardmain {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.cards {
+  text-align: center;
+  width: 25%;
+  margin: 2%;
+}
+.cards h4 {
+  color: black;
+  font-weight: 600;
+  font-size: 40px;
+}
+.cards p {
+  color: #c4c4c4;
+}
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  .header p {
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center;
+  }
+  .cardmain {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .cards {
+    text-align: center;
+    width: 40%;
+    margin: 2%;
+  }
+}
