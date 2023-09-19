@@ -4,7 +4,7 @@
   justify-content: center;
   margin: 2rem;
   padding: 2rem;
-  height: 50vh;
+  /* height: 50vh; */
 }
 .header {
   text-align: center;
@@ -34,10 +34,24 @@
 .cards p {
   color: #c4c4c4;
 }
-
-
-
-
+.valuescardmain{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.valuecard{
+  background-color: #f5f4f4;
+  margin: 1.5rem;
+  width: 45%;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 20px;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 @media screen and (max-width: 767px) {
@@ -57,4 +71,10 @@
     width: 40%;
     margin: 2%;
   }
+  .valuecard{
+    background-color: #f5f4f4;
+    width: 100%;
+    border-radius: 20px;
+    height: 40vh;
+  } 
 }

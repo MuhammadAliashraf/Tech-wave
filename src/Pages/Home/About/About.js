@@ -3,6 +3,32 @@ import styles from "./About.module.css";
 import Fade from "react-reveal";
 import Experience from "../../../Components/Experience/Experience";
 function About() {
+  const data = [
+    {
+      id: 1,
+      icon: "A",
+      title: "Design",
+      para: "We believe in the power of thoughtful design, creating products that blend aesthetically and functionally.",
+    },
+    {
+      id: 1,
+      icon: "A",
+      title: "Quality",
+      para: "Quality is at the forefront of everything we do. From materials selection to manufacturing processes.",
+    },
+    {
+      id: 1,
+      icon: "A",
+      title: "Innovation",
+      para: "We foster a culture of innovation, constantly pushing the boundaries of what's possible and embracing new technologies.",
+    },
+    {
+      id: 1,
+      icon: "A",
+      title: "Passion",
+      para: "We are deeply passionate about what we do, and that passion fuels our commitment to delivering exceptional products.",
+    },
+  ];
   return (
     <div>
       <Fade bottom>
@@ -59,8 +85,22 @@ function About() {
           </p>
         </div>
       </div>
-      <div>
-        
+      <div className={styles.valuescardmain}>
+        <Fade bottom>
+          {data.map((e, i) => {
+            return (
+              <div className={styles.valuecard}>
+                <div>
+                  {e.icon}
+                  <div>
+                    <h5>{e.title}</h5>
+                    <p>{e.para}</p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </Fade>
       </div>
     </div>
   );
