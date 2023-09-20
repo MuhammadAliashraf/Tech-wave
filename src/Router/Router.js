@@ -6,6 +6,7 @@ import Footer from "../Components/Footer/Footer";
 import Store from "../Pages/Home/Store/Store";
 import About from "../Pages/Home/About/About";
 import Support from "../Pages/Support/Support";
+import Contact from "../Pages/Contact/Contact";
 
 const AppRouter = () => {
   return (
@@ -17,6 +18,7 @@ const AppRouter = () => {
         <Route path="store" element={<Store />} />
         <Route path="about" element={<About />} />
         <Route path="support" element={<Support />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>
