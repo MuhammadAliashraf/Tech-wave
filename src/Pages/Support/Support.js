@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./Support.module.css";
 import Fade from "react-reveal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faArrowUp, faCross, faMinus, faPlus, faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 function Support() {
   const [expandedIndex, setExpandedIndex] = useState(-1);
 
@@ -16,32 +16,31 @@ function Support() {
 
   const data = [
     {
-      question: 'Questions 1?',
+      question: "Questions 1?",
       answer:
-        'Kavvay, Türkiye’den yurt dışına satış yapa e-ticaret sitelerinin kullana bileceği E-gönderi yazılım hizmetidir. Size özel Kavvay hesabı üzerinden siparişlerinizi ve gönderilerinizi yöneterek, Kavvay E-Gönderi yazılım teknolojisi üzerinden gönderilerinizi müşterilerinize ulaşmasını sağlaya bilirsiniz.',
+        "Kavvay, Türkiye’den yurt dışına satış yapa e-ticaret sitelerinin kullana bileceği E-gönderi yazılım hizmetidir. Size özel Kavvay hesabı üzerinden siparişlerinizi ve gönderilerinizi yöneterek, Kavvay E-Gönderi yazılım teknolojisi üzerinden gönderilerinizi müşterilerinize ulaşmasını sağlaya bilirsiniz.",
     },
     {
-      question: 'Questions 1?',
+      question: "Questions 2?",
       answer:
-        'Kavvay, Türkiye’den yurt dışına satış yapa e-ticaret sitelerinin kullana bileceği E-gönderi yazılım hizmetidir. Size özel Kavvay hesabı üzerinden siparişlerinizi ve gönderilerinizi yöneterek, Kavvay E-Gönderi yazılım teknolojisi üzerinden gönderilerinizi müşterilerinize ulaşmasını sağlaya bilirsiniz.',
+        "Kavvay, Türkiye’den yurt dışına satış yapa e-ticaret sitelerinin kullana bileceği E-gönderi yazılım hizmetidir. Size özel Kavvay hesabı üzerinden siparişlerinizi ve gönderilerinizi yöneterek, Kavvay E-Gönderi yazılım teknolojisi üzerinden gönderilerinizi müşterilerinize ulaşmasını sağlaya bilirsiniz.",
     },
     {
-      question: 'Questions 1?',
+      question: "Questions 3?",
       answer:
-        'Kavvay, Türkiye’den yurt dışına satış yapa e-ticaret sitelerinin kullana bileceği E-gönderi yazılım hizmetidir. Size özel Kavvay hesabı üzerinden siparişlerinizi ve gönderilerinizi yöneterek, Kavvay E-Gönderi yazılım teknolojisi üzerinden gönderilerinizi müşterilerinize ulaşmasını sağlaya bilirsiniz.',
+        "Kavvay, Türkiye’den yurt dışına satış yapa e-ticaret sitelerinin kullana bileceği E-gönderi yazılım hizmetidir. Size özel Kavvay hesabı üzerinden siparişlerinizi ve gönderilerinizi yöneterek, Kavvay E-Gönderi yazılım teknolojisi üzerinden gönderilerinizi müşterilerinize ulaşmasını sağlaya bilirsiniz.",
     },
     {
-      question: 'Questions 1?',
+      question: "Questions 4?",
       answer:
-        'Kavvay, Türkiye’den yurt dışına satış yapa e-ticaret sitelerinin kullana bileceği E-gönderi yazılım hizmetidir. Size özel Kavvay hesabı üzerinden siparişlerinizi ve gönderilerinizi yöneterek, Kavvay E-Gönderi yazılım teknolojisi üzerinden gönderilerinizi müşterilerinize ulaşmasını sağlaya bilirsiniz.',
+        "Kavvay, Türkiye’den yurt dışına satış yapa e-ticaret sitelerinin kullana bileceği E-gönderi yazılım hizmetidir. Size özel Kavvay hesabı üzerinden siparişlerinizi ve gönderilerinizi yöneterek, Kavvay E-Gönderi yazılım teknolojisi üzerinden gönderilerinizi müşterilerinize ulaşmasını sağlaya bilirsiniz.",
     },
     {
-      question: 'Questions 1?',
+      question: "Questions 5?",
       answer:
-        'Kavvay, Türkiye’den yurt dışına satış yapa e-ticaret sitelerinin kullana bileceği E-gönderi yazılım hizmetidir. Size özel Kavvay hesabı üzerinden siparişlerinizi ve gönderilerinizi yöneterek, Kavvay E-Gönderi yazılım teknolojisi üzerinden gönderilerinizi müşterilerinize ulaşmasını sağlaya bilirsiniz.',
+        "Kavvay, Türkiye’den yurt dışına satış yapa e-ticaret sitelerinin kullana bileceği E-gönderi yazılım hizmetidir. Size özel Kavvay hesabı üzerinden siparişlerinizi ve gönderilerinizi yöneterek, Kavvay E-Gönderi yazılım teknolojisi üzerinden gönderilerinizi müşterilerinize ulaşmasını sağlaya bilirsiniz.",
     },
-  
-  ]
+  ];
   return (
     <>
       <Fade bottom>
@@ -60,7 +59,7 @@ function Support() {
         <h4>FREQUENTLY ASKED QUESTIONS</h4>
         <div className={styles.question_border}>
           {data?.map((item, index) => (
-            <div key={index} >
+            <div key={index}>
               <div className={styles.question}>
                 <h4>{item.question}</h4>
                 <div>
@@ -69,9 +68,15 @@ function Support() {
                     onClick={() => toggleAnswer(index)}
                   >
                     {index === expandedIndex ? (
-                      <FontAwesomeIcon icon={faArrowUp} className={styles.icons} />
+                      <FontAwesomeIcon
+                        icon={faMinus}
+                        className={styles.icons}
+                      />
                     ) : (
-                      <FontAwesomeIcon icon={faArrowDown} className={styles.icons} />
+                      <FontAwesomeIcon
+                        icon={faPlus}
+                        className={styles.icons}
+                      />
                     )}
                   </span>
                 </div>
