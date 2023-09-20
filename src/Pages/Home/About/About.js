@@ -2,29 +2,47 @@ import React from "react";
 import styles from "./About.module.css";
 import Fade from "react-reveal";
 import Experience from "../../../Components/Experience/Experience";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHeart,
+  faLightbulb,
+  faStar,
+} from "@fortawesome/free-regular-svg-icons";
+import {
+  faCreativeCommons,
+  faFacebook,
+  faGoogle,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faCross,
+  faIndustry,
+  faPenRuler,
+  faTractor,
+} from "@fortawesome/free-solid-svg-icons";
+import Premium from "../../../Components/Premium/Premium";
 function About() {
   const data = [
     {
       id: 1,
-      icon: "A",
+      icon: <FontAwesomeIcon size="2xl" icon={faPenRuler} />,
       title: "Design",
       para: "We believe in the power of thoughtful design, creating products that blend aesthetically and functionally.",
     },
     {
       id: 1,
-      icon: "A",
+      icon: <FontAwesomeIcon size="2xl" icon={faStar} />,
       title: "Quality",
       para: "Quality is at the forefront of everything we do. From materials selection to manufacturing processes.",
     },
     {
       id: 1,
-      icon: "A",
+      icon: <FontAwesomeIcon size="2xl" icon={faLightbulb} />,
       title: "Innovation",
       para: "We foster a culture of innovation, constantly pushing the boundaries of what's possible and embracing new technologies.",
     },
     {
       id: 1,
-      icon: "A",
+      icon: <FontAwesomeIcon size="2xl" icon={faHeart} />,
       title: "Passion",
       para: "We are deeply passionate about what we do, and that passion fuels our commitment to delivering exceptional products.",
     },
@@ -101,6 +119,36 @@ function About() {
             );
           })}
         </Fade>
+      </div>
+      <Premium />
+
+      {/* our Partner */}
+      <div className={styles.ourpartner}>
+        <div>
+          <h4 style={{ textAlign: "center" }}>Our partners</h4>
+          <div className={styles.icons}>
+            <FontAwesomeIcon
+              style={{ margin: 15 }}
+              size="2xl"
+              icon={faGoogle}
+            />
+            <FontAwesomeIcon
+              style={{ margin: 15 }}
+              size="2xl"
+              icon={faFacebook}
+            />
+            <FontAwesomeIcon
+              style={{ margin: 15 }}
+              size="2xl"
+              icon={faIndustry}
+            />
+            <FontAwesomeIcon
+              style={{ margin: 15 }}
+              size="2xl"
+              icon={faTractor}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
