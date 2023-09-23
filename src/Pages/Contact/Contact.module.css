@@ -1,6 +1,6 @@
 .maincolor {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -12,6 +12,10 @@
   /* height: 50vh; */
   width: 45%;
 }
+.first h1 {
+  font-size: 70px;
+  font-weight: 500;
+}
 .second {
   background-color: #eaeaea;
   border-radius: 30px;
@@ -20,29 +24,77 @@
   /* height: 50vh; */
   width: 45%;
 }
-.form{
+.form {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  border: 1px solid black;
 }
-  /* align-items: center; */
-.inputfeild{
+/* align-items: center; */
+.inputfeild {
   border-radius: 20px;
-  padding:.5rem .5rem .5rem 2rem;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
   background-color: #eaeaea;
   color: black;
-  margin: 1rem;
+  margin: 1rem 0rem 0rem 0rem;
+  border: 2px solid transparent;
 }
-.textarea{
-  /* padding:.5rem .5rem .5rem 2rem; */
+.inputfeild:focus {
+  border-color: #eaeaea; /* Change the border color when the input is focused */
+  outline: none; /* Remove the default outline */
+}
+.textarea {
   border-radius: 20px;
+  margin: 1rem 0rem 0rem 0rem;
+  padding: 1rem 0rem 0rem 1rem;
+  background-color: #eaeaea;
+  border: 2px solid transparent;
 }
-@media screen and (max-width:767px) {
+
+.textarea:focus {
+  border-color: #eaeaea;
+  outline: none;
+}
+.btn {
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 1rem 0rem 0rem 0rem;
+  height: 60px;
+}
+
+.second {
+  background-color: #eaeaea;
+  border-radius: 30px;
+  margin: 2rem;
+  padding: 2rem;
+  /* height: 50vh; */
+  width: 45%;
+  display: flex;
+  padding: 6rem 0rem 6rem 1rem;
+
+}
+.smallcontent{
+  margin: 0px 0px 2rem 0px;
+}
+.secondcontent {
+}
+@media screen and (max-width: 767px) {
   .first {
     width: 95%;
   }
   .second {
+    background-color: #eaeaea;
+    border-radius: 30px;
+    margin: .5rem 1rem 1rem 1rem ;
+    padding: 2rem;
+    /* height: 50vh; */
     width: 95%;
+    display: flex;
+    padding: 6rem 0rem 6rem 1rem;
+  
+  }
+  .smallcontent{
+    margin: 0px 0px 2rem 0px;
   }
 }
