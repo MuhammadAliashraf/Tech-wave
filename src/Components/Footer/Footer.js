@@ -8,7 +8,6 @@ import Image2 from "../../images/Clip path group-1.png"
 
 function Footer() {
   return (
-    <Fade bottom>
       <div className={styles.footermain}>
         <div className={styles.allcontent}>
           <div className={styles.headicons}>
@@ -70,7 +69,6 @@ function Footer() {
 
         </div>
       </div>
-    </Fade>
   )
 }
 
