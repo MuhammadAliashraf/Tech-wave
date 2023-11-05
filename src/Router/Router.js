@@ -7,6 +7,7 @@ import Store from "../Pages/Home/Store/Store";
 import About from "../Pages/Home/About/About";
 import Support from "../Pages/Support/Support";
 import Contact from "../Pages/Contact/Contact";
+import NotFound from "../Pages/404Page";
 
 const AppRouter = () => {
   return (
@@ -19,6 +20,7 @@ const AppRouter = () => {
         <Route path="about" element={<About />} />
         <Route path="support" element={<Support />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>
